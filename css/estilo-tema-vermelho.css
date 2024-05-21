@@ -1,0 +1,29 @@
+footer,
+span a {
+    background-color: #7f0404;
+}
+
+header {
+    background-image: linear-gradient(#7f0404, #d00000);
+}
+
+table thead,
+table tfoot {
+    background-color: #7f0404;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #df6b63;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #df6b638f;
+}
+
+table tbody tr:hover {
+    background-color: #df63632f;
+}
+
+table tfoot td {
+    border-top: 1px solid #7f0404;
+}

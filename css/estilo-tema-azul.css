@@ -1,0 +1,17 @@
+footer,
+span a {
+    background-color: #003366;
+}
+
+header {
+    background-image: linear-gradient(#003366, #006699);
+}
+
+table thead,
+table tfoot {
+    background-color: #003366;
+}
+
+table tfoot td {
+    border-top: 1px solid #003366;
+}
