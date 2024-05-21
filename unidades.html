@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades</title>
+    <link rel="stylesheet" type="text/css" href="/css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="/css/estilo-tema-azul.css" id="link-tema">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="/imagens/logo_azul(64).png" alt="Logo do SGCM">
+            <span>SGCM</span>
+            <div class="usuario">
+                <span>Usuário: Administrador</span>
+                <span>Papel: ADMIN</span>
+                <p>Tema:
+                    <span>
+                        <select id="tema">
+                            <option value="">Escolha um tema</option>
+                            <option value="azul">Azul</option>
+                            <option value="vermelho">Vermelho</option>
+                            <option value="verde">Verde</option>
+                            <option value="amarelo">Amarelo</option>
+                        </select>
+                    </span>
+                </p>
+            </div>
+        </div>
+
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pacientes.html">Pacientes</a></li>
+            <li><a href="atendimento.html">Atendimento</a></li>
+            <li><a href="convenios.html">Convênios</a></li>
+            <li><a href="profissionais.html">Profissionais</a></li>
+            <li><a href="unidades.html">Unidades</a></li>
+            <li><a href="especialidades.html">Especialidades</a></li>
+            <li><a href="usuarios.html">Usuários</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="" class="inativo">
+            <div class="grid">
+                <label for="endereco">Endereço</label>
+                <input type="text" name="endereco" id="endereco" required>
+                <!-- <br> -->
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required>
+                <!-- <br> -->
+                <span></span>
+                <input type="submit" value="Enviar">
+                <span></span>
+                <input type="button" value="Cancelar" id="vermelho">
+            </div>
+        </form>
+        <a class="botao" id="add">Adicionar</a>
+        <!--Tabela com um cabeçalho, 8 colunas e 5 linhas-->
+        <!-- Emmet: table>thead+tbody+tfoot -->
+        <table>
+            <thead>
+                <!--  Emmet: tr>td*8-->
+                <tr>
+                    <td>ID</td>
+                    <td>Endereço</td>
+                    <td>Nome</td>
+                    <td>Ações</td>
+                </tr>
+            </thead>
+            <tbody>
+                <!--tr*5>td{$}+td{x}*6+td{Editar | Excluir}-->
+                <!-- Emmet: tr*5>td{$}+td{x}*6+td>a[href="javascript:void(0)"]{Editar}+{ | }+a[href="javascript:void(0)"]{Excluir}-->
+                <!-- <tr>
+                    <td>1</td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td><a class="botao" href="javascript:void(0)">Editar</a> <a id="vermelho" class="botao"
+                            href="javascript:void(0)">Excluir</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td><a class="botao" href="javascript:void(0)">Editar</a> <a id="vermelho" class="botao"
+                            href="javascript:void(0)">Excluir</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td><a class="botao" href="javascript:void(0)">Editar</a> <a id="vermelho" class="botao"
+                            href="javascript:void(0)">Excluir</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td><a class="botao" href="javascript:void(0)">Editar</a> <a id="vermelho" class="botao"
+                            href="javascript:void(0)">Excluir</a></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td>x</td>
+                    <td><a class="botao" href="javascript:void(0)">Editar</a> <a id="vermelho" class="botao"
+                            href="javascript:void(0)">Excluir</a></td>
+                </tr> -->
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="8">Total de registros: 3</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+    <footer>
+        <div>
+            <span>SGCM - Sistema de Gerenciamento de Clínica Médica |</span>
+            <span>Telefone de contato: (68)3333-3333 |</span>
+            <span>Email de contato: <a href="mailto:suporte.sgcm@ufac.br">suporte.sgcm@ufac.br</a></span>
+        </div>
+    </footer>
+</body>
+
+</html>
