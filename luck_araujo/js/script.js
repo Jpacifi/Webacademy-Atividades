@@ -102,8 +102,10 @@ const eventoExcluir = () => {
     for (const bt of botoes) {
         bt.addEventListener('click', () => {
             bt.parentNode.parentNode.remove();
+            rodaAuto();
         });
     };
+    
 };
 
 let botaoAdicionar = document.querySelector('a.botao#add');
