@@ -17,16 +17,12 @@
     </header>
     <main>
         <h2>Login</h2>
-        <form  method="post">
-            <label for="username">Usuário:</label>
+        <form method="post" action="${pageContext.request.contextPath}/usuarioservlet">
+            <label for="username">Usuário</label>
             <input type="text" id="username" name="username" required><br><br>
-            <label for="password">Senha:</label>
+            <label for="password">Senha</label>
             <input type="password" id="password" name="password" required><br><br>
-            <a href="index.jsp"
-            class="botao"
-            id="login">
-             login
-         </a>
+            <input type="submit" class="botao" id="login" value="Login">
         </form>
     </main>
     <footer>

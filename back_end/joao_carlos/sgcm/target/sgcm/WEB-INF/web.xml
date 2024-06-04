@@ -37,13 +37,8 @@
     <url-pattern>/usuarioservlet</url-pattern>
   </servlet-mapping>
 
-  <!-- Mapeamento da página login.jsp -->
   <welcome-file-list>
     <welcome-file>login.jsp</welcome-file>
-  </welcome-file-list>
-
-  <!-- Mapeamento da página index.jsp -->
-  <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
 
