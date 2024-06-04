@@ -8,13 +8,13 @@ public class Profissional implements Serializable {
     private String registro;
     private String email;
     private String telefone;
-    private Long unidade;
-    private Long especialidade;
+    private Unidade unidade;
+    private Especialidade especialidade;
 
     // Construtor vazio
     public Profissional() {
-    }
 
+    }
 
     public Long getId() {
         return this.id;
@@ -56,19 +56,19 @@ public class Profissional implements Serializable {
         this.telefone = telefone;
     }
 
-    public Long getUnidade() {
+    public Unidade getUnidade() {
         return unidade;
     }
 
-    public void setUnidade(Long unidade) {
+    public void setUnidade(Unidade unidade) {
         this.unidade = unidade;
     }
 
-    public Long getEspecialidade() {
+    public Especialidade getEspecialidade() {
         return especialidade;
     }
 
-    public void setEspecialidade(Long especialidade) {
+    public void setEspecialidade(Especialidade especialidade) {
         this.especialidade = especialidade;
     }
 

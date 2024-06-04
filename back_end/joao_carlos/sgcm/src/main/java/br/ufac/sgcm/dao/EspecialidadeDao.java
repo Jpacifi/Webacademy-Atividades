@@ -15,7 +15,7 @@ public class EspecialidadeDao {
     ResultSet rs;
 
     public EspecialidadeDao() {
-        conexao = new ConexaoDB().getConexao();
+        conexao = ConexaoDB.getConexao();
     }
 
     // Retornar todas as Especialidades
