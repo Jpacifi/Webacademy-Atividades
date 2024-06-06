@@ -24,7 +24,7 @@
     <servlet-name>PrimeiroServlet</servlet-name>
     <url-pattern>/primeiroservlet</url-pattern>
   </servlet-mapping>
-
+  
   <servlet>
     <servlet-name>Atendimento</servlet-name>
     <servlet-class>br.ufac.sgcm.controller.AtendimentoServlet</servlet-class>
